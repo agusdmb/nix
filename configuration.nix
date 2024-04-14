@@ -85,9 +85,9 @@
   users.users.agusdmb = {
     isNormalUser = true;
     description = "Agustin Marquez";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-      firefox
+    #  firefox
       brave
     #  thunderbird
     ];
@@ -114,6 +114,8 @@
     defaultEditor = true;
   };
   programs.fish.enable = true;
+
+  virtualisation.docker.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
