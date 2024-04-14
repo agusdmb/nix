@@ -89,6 +89,8 @@
     packages = with pkgs; [
       brave
       lazygit
+      nodejs_21
+      yarn
     ];
     shell = pkgs.fish;
   };
@@ -107,8 +109,13 @@
   git
   pyenv
   poetry
-  clang
-  gnumake
+  gcc
+  glibc
+  binutils
+  coreutils
+  # make
+  cmake
+  zlib
   ];
 
   programs.hyprland.enable = true;
