@@ -107,6 +107,7 @@
   git
   pyenv
   poetry
+  clang
   ];
 
   programs.hyprland.enable = true;
