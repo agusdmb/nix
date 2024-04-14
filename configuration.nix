@@ -89,8 +89,6 @@
     packages = with pkgs; [
       brave
       lazygit
-      nodejs_21
-      yarn
     ];
     shell = pkgs.fish;
   };
@@ -113,9 +111,14 @@
   glibc
   binutils
   coreutils
+  gnumake
+  pkg-config
   # make
   cmake
   zlib
+  nodejs_21
+  yarn
+  unzip
   ];
 
   programs.hyprland.enable = true;
