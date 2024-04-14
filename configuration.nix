@@ -91,6 +91,7 @@
       gh
       kubectl
       k9s
+      kind
     ];
     shell = pkgs.fish;
   };
