@@ -89,6 +89,7 @@
     packages = with pkgs; [
     #  firefox
       brave
+      lazygit
     #  thunderbird
     ];
     shell = pkgs.fish;
