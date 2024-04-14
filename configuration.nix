@@ -106,6 +106,7 @@
   rofi-wayland
   git
   pyenv
+  poetry
   ];
 
   programs.hyprland.enable = true;
