@@ -87,10 +87,8 @@
     description = "Agustin Marquez";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-    #  firefox
       brave
       lazygit
-    #  thunderbird
     ];
     shell = pkgs.fish;
   };
@@ -107,6 +105,7 @@
   waybar
   rofi-wayland
   git
+  pyenv
   ];
 
   programs.hyprland.enable = true;
