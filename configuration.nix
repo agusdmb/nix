@@ -107,15 +107,6 @@
   git
   pyenv
   poetry
-  gcc
-  glibc
-  binutils
-  coreutils
-  gnumake
-  pkg-config
-  # make
-  cmake
-  zlib
   nodejs_21
   yarn
   unzip
