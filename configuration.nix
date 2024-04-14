@@ -87,7 +87,6 @@
     description = "Agustin Marquez";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-      brave
       lazygit
     ];
     shell = pkgs.fish;
@@ -99,20 +98,13 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-  alacritty
-  waybar
-  rofi-wayland
-  git
-  pyenv
-  poetry
-  nodejs_21
-  yarn
-  unzip
+    alacritty
+    git
+    unzip
+    brave
   ];
 
-  programs.hyprland.enable = true;
+  # programs.hyprland.enable = true;
   programs.neovim = {
     enable = true;
     defaultEditor = true;
