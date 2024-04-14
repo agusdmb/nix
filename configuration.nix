@@ -92,6 +92,7 @@
       kubectl
       k9s
       kind
+      ranger
     ];
     shell = pkgs.fish;
   };
