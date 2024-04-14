@@ -88,6 +88,9 @@
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       lazygit
+      gh
+      kubectl
+      k9s
     ];
     shell = pkgs.fish;
   };
