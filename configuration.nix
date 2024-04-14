@@ -108,6 +108,7 @@
   pyenv
   poetry
   clang
+  gnumake
   ];
 
   programs.hyprland.enable = true;
