@@ -93,6 +93,7 @@
       k9s
       kind
       ranger
+      tig
     ];
     shell = pkgs.fish;
   };
@@ -113,6 +114,8 @@
     swww
     rofi-wayland
   ];
+
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   programs.hyprland.enable = true;
 
