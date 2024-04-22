@@ -94,6 +94,7 @@
       kind
       ranger
       tig
+      wf-recorder
     ];
     shell = pkgs.fish;
   };
