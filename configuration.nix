@@ -107,13 +107,20 @@
     git
     unzip
     brave
+    waybar
+    mako
+    libnotify
+    swww
+    rofi-wayland
   ];
 
-  # programs.hyprland.enable = true;
+  programs.hyprland.enable = true;
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
   };
+
   programs.fish.enable = true;
 
   programs.starship = {
@@ -125,10 +132,10 @@
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
 
   # List services that you want to enable:
 
