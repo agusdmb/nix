@@ -99,6 +99,10 @@
     shell = pkgs.fish;
   };
 
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "Hack" ]; })
+  ];
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
