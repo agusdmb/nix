@@ -85,7 +85,7 @@
   users.users.agusdmb = {
     isNormalUser = true;
     description = "Agustin Marquez";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "audio" ];
     packages = with pkgs; [
       lazygit
       gh
@@ -122,6 +122,7 @@
     rofi-wayland
     sway
     vlc
+    pulseaudio
   ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
