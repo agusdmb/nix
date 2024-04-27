@@ -78,9 +78,9 @@
     #media-session.enable = true;
   };
 
-  boot.extraModprobeConfig = ''
-    options snd slots=sof-hda-dsp
-  '';
+  # boot.extraModprobeConfig = ''
+  #   options snd slots=sof-hda-dsp
+  # '';
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
