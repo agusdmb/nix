@@ -95,6 +95,8 @@
       ranger
       tig
       wf-recorder
+      htop
+      btop
     ];
     shell = pkgs.fish;
   };
