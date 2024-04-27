@@ -97,6 +97,7 @@
       wf-recorder
       htop
       btop
+      fzf
     ];
     shell = pkgs.fish;
   };
@@ -120,6 +121,7 @@
     libnotify
     rofi-wayland
     sway
+    vlc
   ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
