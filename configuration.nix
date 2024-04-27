@@ -118,9 +118,7 @@
     waybar
     mako
     libnotify
-    swww
     rofi-wayland
-    sway
   ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
