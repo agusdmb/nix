@@ -107,6 +107,13 @@
     shell = pkgs.fish;
   };
 
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users = {
+      "agusdmb" = import ./home.nix;
+    };
+  };
+
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "Hack" ]; })
   ];
