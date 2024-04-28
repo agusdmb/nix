@@ -92,6 +92,7 @@
     extraGroups = [ "networkmanager" "wheel" "docker" "audio" ];
     packages = with pkgs; [
       lazygit
+      lazydocker
       gh
       kubectl
       k9s
