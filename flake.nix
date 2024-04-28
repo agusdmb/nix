@@ -9,7 +9,7 @@
     };
   };
 
-  outputs = { self, nixpkgs }: 
+  outputs = { self, nixpkgs, ... }@inputs: 
     let
       lib = nixpkgs.lib;
     in {
