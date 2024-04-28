@@ -6,7 +6,7 @@
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-    }
+    };
   };
 
   outputs = { self, nixpkgs }: 
@@ -20,7 +20,7 @@
           modules = [
             ./configuration.nix
             inputs.home-manager.nixosModules.default
-            ];
+          ];
         };
       };
     };
