@@ -11,17 +11,15 @@
 
   outputs = { self, nixpkgs, ... }@inputs: 
     let
-      lib = nixpkgs.lib;
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
     in {
-      nixosConfigurations = {
-        agusdmb-laptop = lib.nixosSystem {
-          system = "x86_64-linux";
-          extraSpecialArgs = {inherit inputs;};
-          modules = [
-            ./configuration.nix
-            inputs.home-manager.nixosModules.default
-          ];
-        };
+      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+        extraSpecialArgs = {inherit inputs;};
+        modules = [
+          ./configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
       };
     };
 }
