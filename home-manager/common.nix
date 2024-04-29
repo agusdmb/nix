@@ -20,6 +20,7 @@
     ripgrep
     azure-cli
     tree
+    bat
   ];
 
   programs.git = {
