@@ -12,7 +12,6 @@
     ranger
     tig
     htop
-    btop
     fzf
     nodejs_20
     jq
@@ -46,5 +45,13 @@
   programs.neovim = {
     enable = true;
     defaultEditor = true;
+  };
+
+  programs.btop = {
+    enable = true;
+    settings = {
+      vim_keys = true;
+      theme_background = false;
+    };
   };
 }
