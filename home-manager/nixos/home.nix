@@ -13,5 +13,6 @@ lib.recursiveUpdate commonConfig {
     wf-recorder
     vlc
     brave
+    rawtherapee
   ];
 }

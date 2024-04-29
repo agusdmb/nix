@@ -11,6 +11,5 @@ lib.recursiveUpdate commonConfig {
 
   home.packages = with pkgs; [
     unixtools.watch
-    tree
   ];
 }

@@ -20,6 +20,7 @@
     python311Full
     ripgrep
     azure-cli
+    tree
   ];
 
   programs.git = {
