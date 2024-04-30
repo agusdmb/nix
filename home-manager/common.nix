@@ -8,7 +8,6 @@
     kubectl
     k9s
     kind
-    ranger
     tig
     htop
     fzf
@@ -71,6 +70,23 @@
         decorations = "none";
         opacity = 0.8;
       };
+    };
+  };
+
+  programs.kitty = {
+    enable = true;
+    theme = "Catppuccin-Mocha";
+    settings = {
+      font_family = "Hack Nerd Font Mono";
+      font_size = 16;
+    };
+  };
+
+  programs.ranger = {
+    enable = true;
+    settings = {
+      preview_images = true;
+      preview_images_method = "kitty";
     };
   };
 }
