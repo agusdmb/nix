@@ -19,6 +19,7 @@
     azure-cli
     tree
     bat
+    poppler_utils
   ];
 
   programs.git = {
