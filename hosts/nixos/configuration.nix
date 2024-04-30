@@ -114,6 +114,7 @@
     sway
     pulseaudio
     home-manager
+    cryptsetup
   ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
