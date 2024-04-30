@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    alacritty
+    kitty
     lazygit
     lazydocker
     gh
@@ -53,6 +53,25 @@
     settings = {
       vim_keys = true;
       theme_background = false;
+    };
+  };
+
+  programs.alacritty = {
+    enable = true;
+    settings = {
+      font = {
+        size = 20;
+        normal = {
+          family = "Hack Nerd Font Mono";
+        };
+      };
+      selection = {
+        save_to_clipboard = true;
+      };
+      window = {
+        decorations = "none";
+        opacity = 0.8;
+      };
     };
   };
 }
