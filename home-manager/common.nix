@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    kitty
     lazygit
     lazydocker
     gh
