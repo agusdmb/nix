@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     python311Full
+    jq
     bat
     poppler_utils
     lf

@@ -58,7 +58,7 @@
   };
 
   programs.alacritty = {
-    enable = true;
+    enable = false;
     settings = {
       font = {
         size = 16;
