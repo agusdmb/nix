@@ -21,6 +21,7 @@
     bat
     poppler_utils
     lf
+    pv
   ];
 
   programs.git = {
