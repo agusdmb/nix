@@ -22,6 +22,7 @@
     poppler_utils
     lf
     pv
+    gnumake
   ];
 
   programs.git = {
