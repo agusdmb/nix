@@ -52,7 +52,7 @@
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
-    variant = "intl";
+    variant = "altgr-intl";
     options = "caps:escape";
 
     # Run these 2 lines to set the caps lock
