@@ -1,16 +1,15 @@
 { config, pkgs, lib, ... }:
 
 {
+  catppuccin.flavour = "mocha";
+
   home.packages = with pkgs; [
-    lazygit
     lazydocker
     gh
     kubectl
-    k9s
     kind
     tig
     htop
-    fzf
     nodejs_20
     jq
     wget
@@ -22,6 +21,23 @@
     gnumake
     xclip
   ];
+
+  xdg.enable = true;
+
+  programs.k9s = {
+    enable = true;
+    catppuccin = {
+      enable = true;
+    };
+  };
+
+
+  programs.lazygit = {
+    enable = true;
+    catppuccin = {
+      enable = true;
+    };
+  };
 
   programs.git = {
     enable = true;
@@ -42,8 +58,6 @@
     };
   };
 
-  catppuccin.flavour = "mocha";
-
   programs.starship = {
     enable = true;
     catppuccin.enable = true;
@@ -58,8 +72,8 @@
     enable = true;
     settings = {
       vim_keys = true;
-      theme_background = false;
     };
+    catppuccin.enable = true;
   };
 
   programs.alacritty = {
@@ -83,11 +97,22 @@
 
   programs.kitty = {
     enable = true;
-    theme = "Catppuccin-Mocha";
+    # theme = "Catppuccin-Mocha";
     settings = {
       font_family = "Hack Nerd Font Mono";
       font_size = 16;
     };
+    catppuccin.enable = true;
+  };
+
+  programs.gh-dash = {
+    enable = true;
+    catppuccin.enable = true;
+  };
+
+  programs.fzf = {
+    enable = true;
+    catppuccin.enable = true;
   };
 
 }

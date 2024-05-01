@@ -4,10 +4,16 @@
   home.packages = with pkgs; [
     python311Full
     jq
-    bat
     poppler_utils
     lf
   ];
+
+  programs.bat = {
+    enable = true;
+    catppuccin = {
+      enable = true;
+    };
+  };
 
   programs.ranger = {
     enable = true;

@@ -8,9 +8,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    catppuccin.url = "github:catppuccin/nix";
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, catppuccin, home-manager, ... }:
     let
       system = "aarch64-darwin";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -21,8 +22,8 @@
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
         modules = [
+          catppuccin.homeManagerModules.catppuccin
           ./home.nix
-          ../common.nix
         ];
 
         # Optionally use extraSpecialArgs
