@@ -53,6 +53,12 @@
   services.xserver.xkb = {
     layout = "us";
     variant = "intl";
+    options = "caps:escape";
+
+    # Run these 2 lines to set the caps lock
+    # gsettings reset org.gnome.desktop.input-sources xkb-options
+    # gsettings reset org.gnome.desktop.input-sources sources
+
   };
 
   # Configure console keymap
