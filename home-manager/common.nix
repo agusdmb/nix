@@ -20,6 +20,7 @@
     tree
     bat
     poppler_utils
+    lf
   ];
 
   programs.git = {
