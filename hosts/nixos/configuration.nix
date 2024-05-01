@@ -50,9 +50,9 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "intl";
+    variant = "intl";
   };
 
   # Configure console keymap
@@ -107,19 +107,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    waybar
-    mako
-    libnotify
-    rofi-wayland
-    sway
-    pulseaudio
     home-manager
     cryptsetup
   ];
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  programs.hyprland.enable = true;
+  # programs.hyprland.enable = true;
 
   virtualisation.docker.enable = true;
 
