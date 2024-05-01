@@ -23,6 +23,8 @@
     lf
     pv
     gnumake
+    luajitPackages.jsregexp
+    xclip
   ];
 
   programs.git = {
