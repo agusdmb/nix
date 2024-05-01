@@ -42,7 +42,12 @@
     };
   };
 
-  programs.starship.enable = true;
+  catppuccin.flavour = "mocha";
+
+  programs.starship = {
+    enable = true;
+    catppuccin.enable = true;
+  };
 
   programs.neovim = {
     enable = true;
