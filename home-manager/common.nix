@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   home.packages = with pkgs; [
@@ -18,9 +18,6 @@
     ripgrep
     azure-cli
     tree
-    bat
-    poppler_utils
-    lf
     pv
     gnumake
     xclip
@@ -46,6 +43,7 @@
   };
 
   programs.starship.enable = true;
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -87,11 +85,4 @@
     };
   };
 
-  programs.ranger = {
-    enable = true;
-    settings = {
-      preview_images = true;
-      preview_images_method = "kitty";
-    };
-  };
 }

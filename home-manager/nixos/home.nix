@@ -1,9 +1,12 @@
 { config, pkgs, lib, ... }:
 
-let
-  commonConfig = import ../common.nix { inherit pkgs; };
-in
-lib.recursiveUpdate commonConfig {
+{
+  imports = [
+    ../common.nix
+    ../neovim.nix
+    ../ranger.nix
+  ];
+
   home.username = "agusdmb";
   home.homeDirectory = "/home/agusdmb";
   home.stateVersion = "23.11";

@@ -22,7 +22,6 @@
         # the path to your home.nix.
         modules = [
           ./home.nix
-          ../common.nix
         ];
 
         # Optionally use extraSpecialArgs
