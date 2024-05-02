@@ -6,6 +6,7 @@
     kind
     kubectl
     kubectx
+    kubelogin
   ];
 
   xdg.enable = true;
