@@ -12,8 +12,6 @@
     tig
   ];
 
-  xdg.enable = true;
-
   programs.git = {
     enable = true;
     userName = "Agustin Marquez";
