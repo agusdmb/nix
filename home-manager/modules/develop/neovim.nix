@@ -23,4 +23,14 @@
     catppuccin.enable = true;
   };
 
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+    '';
+    shellAliases = {
+      vim = "nvim";
+      vi = "nvim";
+    };
+  };
 }

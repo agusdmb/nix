@@ -13,12 +13,6 @@
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
     '';
-    shellAliases = {
-      vim = "nvim";
-      vi = "nvim";
-      kdev = "k9s --context nbllabaks -n nebuly-dev";
-      kprod = "k9s --context nblprdaks -n nebuly-prod";
-    };
   };
 
 }
