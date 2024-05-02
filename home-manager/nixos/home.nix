@@ -2,9 +2,7 @@
 
 {
   imports = [
-    ../common.nix
-    ../neovim.nix
-    ../ranger.nix
+    ../modules/main.nix
   ];
 
   home.username = "agusdmb";

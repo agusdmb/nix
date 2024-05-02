@@ -2,20 +2,25 @@
 
 {
   home.packages = with pkgs; [
-    lazygit
     fzf
-    nodejs_20
+    gnumake
     jq
-    wget
+    lazygit
+    nodejs_20
     python311Full
     ripgrep
-    gnumake
+    wget
     xclip
   ];
 
   programs.neovim = {
     enable = true;
     defaultEditor = true;
+  };
+
+  programs.lazygit = {
+    enable = true;
+    catppuccin.enable = true;
   };
 
 }
