@@ -6,6 +6,8 @@
     wget
     tree
     pv
+    gptfdisk
+    parted
   ];
 
   programs.fish = {
