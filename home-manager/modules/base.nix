@@ -8,6 +8,8 @@
     pv
     gptfdisk
     parted
+    fuse
+    ntfs3g
   ];
 
   programs.fish = {
