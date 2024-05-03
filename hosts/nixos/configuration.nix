@@ -114,6 +114,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     home-manager
+    git
     cryptsetup
   ];
 
