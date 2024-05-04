@@ -15,5 +15,6 @@
     vlc
     brave
     rawtherapee
+    bitwarden-cli
   ];
 }
