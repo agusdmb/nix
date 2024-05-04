@@ -10,6 +10,7 @@
     parted
     fuse
     ntfs3g
+    lsof
   ];
 
   programs.fish = {
