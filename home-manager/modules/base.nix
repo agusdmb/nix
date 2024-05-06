@@ -6,6 +6,7 @@
     wget
     tree
     pv
+    fd
   ];
 
   programs.fish = {
