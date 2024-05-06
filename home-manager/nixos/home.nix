@@ -3,6 +3,7 @@
 {
   imports = [
     ../modules/main.nix
+    ../modules/linux-tools.nix
   ];
 
   home.username = "agusdmb";

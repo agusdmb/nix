@@ -6,11 +6,6 @@
     wget
     tree
     pv
-    gptfdisk
-    parted
-    fuse
-    ntfs3g
-    lsof
   ];
 
   programs.fish = {
