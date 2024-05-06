@@ -8,4 +8,8 @@
   ];
 
   catppuccin.flavour = "mocha";
+
+  home.packages = with pkgs; [
+    taskwarrior
+  ];
 }
