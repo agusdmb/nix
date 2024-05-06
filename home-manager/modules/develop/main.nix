@@ -16,6 +16,9 @@
     enable = true;
     userName = "Agustin Marquez";
     userEmail = "agusdmb@gmail.com";
+    ignores = [
+      ".venv"
+    ];
   };
 
   programs.starship = {
