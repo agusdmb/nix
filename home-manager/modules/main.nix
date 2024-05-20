@@ -5,6 +5,7 @@
     ./base.nix
     ./ranger.nix
     ./develop/main.nix
+    ./google.nix
   ];
 
   catppuccin.flavour = "mocha";
