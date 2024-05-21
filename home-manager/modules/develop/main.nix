@@ -19,6 +19,9 @@
     ignores = [
       ".venv"
     ];
+    extraConfig = {
+      merge.ff = false;
+    };
   };
 
   programs.starship = {
