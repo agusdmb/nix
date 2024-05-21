@@ -7,6 +7,7 @@
     tree
     pv
     fd
+    unzip
   ];
 
   programs.fish = {
