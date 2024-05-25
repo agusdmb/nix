@@ -8,7 +8,7 @@
     ./google.nix
   ];
 
-  catppuccin.flavour = "mocha";
+  catppuccin.flavor = "mocha";
 
   home.packages = with pkgs; [
     taskwarrior

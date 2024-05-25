@@ -42,7 +42,7 @@
     # theme = "Catppuccin-Mocha";
     settings = {
       font_family = "Hack Nerd Font Mono";
-      font_size = 16;
+      font_size = 14;
     };
     catppuccin.enable = true;
   };
