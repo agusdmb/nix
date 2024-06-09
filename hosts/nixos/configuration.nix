@@ -101,6 +101,19 @@
     shell = pkgs.fish;
   };
 
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.remote = {
+    isSystemUser = true;
+    description = "Remote";
+    group = "remotegroup";
+    extraGroups = [];
+    packages = with pkgs; [
+    ];
+    shell = pkgs.fish;
+  };
+
+  users.groups.remotegroup = {};
+
   programs.fish.enable = true;
 
   fonts.packages = with pkgs; [
