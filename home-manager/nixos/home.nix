@@ -15,6 +15,7 @@
     wf-recorder
     vlc
     brave
+    firefox
     rawtherapee
     bitwarden-cli
   ];
