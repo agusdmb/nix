@@ -97,6 +97,7 @@
     description = "Agustin Marquez";
     extraGroups = [ "networkmanager" "wheel" "docker" "audio" ];
     packages = with pkgs; [
+      ngrok
     ];
     shell = pkgs.fish;
   };
