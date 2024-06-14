@@ -24,7 +24,7 @@
     shellAliases = {
       kdev = "k9s --context nbllabaks -n nebuly-dev";
       kprod = "k9s --context nblprdaks -n nebuly-prod";
-      kalex = "k9s --context arn:aws:eks:eu-north-1:637423343975:cluster/nblplatformeks -n nebuly";
+      kaxel = "k9s --context arn:aws:eks:eu-north-1:637423343975:cluster/nblplatformeks -n nebuly";
     };
   };
 }
