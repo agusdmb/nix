@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     azure-cli
+    awscli2
     kind
     kubectl
     kubectx

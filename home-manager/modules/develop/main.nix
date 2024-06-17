@@ -10,7 +10,6 @@
     gh
     lazydocker
     tig
-    awscli2
   ];
 
   programs.git = {
