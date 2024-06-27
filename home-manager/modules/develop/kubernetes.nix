@@ -26,6 +26,7 @@
       kdev = "k9s --context nbllabaks -n nebuly-dev";
       kprod = "k9s --context nblprdaks -n nebuly-prod";
       kaxel = "k9s --context arn:aws:eks:eu-north-1:637423343975:cluster/nblplatformeks -n nebuly";
+      kiveco = "k9s --context az-eu-genai-aks-d-101 -n nebuly";
     };
   };
 }
